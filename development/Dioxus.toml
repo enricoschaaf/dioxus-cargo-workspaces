@@ -1,0 +1,7 @@
+[application]
+name = "dioxus-cargo-workspaces"
+default_platform = "fullstack"
+asset_dir = "public"
+
+[web.watcher]
+watch_path = [".."]

@@ -1,0 +1,14 @@
+[package]
+edition = "2021"
+name = "development"
+version = "0.1.0"
+
+[dependencies]
+dioxus = { workspace = true, optional = true }
+dioxus-web = { workspace = true, optional = true }
+server = { path = "../server", optional = true }
+web = { path = "../web", optional = true }
+
+[features]
+server = ["dep:server"]
+web = ["dep:web", "dioxus-web", "dioxus"]

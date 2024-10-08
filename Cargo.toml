@@ -1,0 +1,7 @@
+[workspace]
+members = ["web", "server", "development"]
+
+[workspace.dependencies]
+dioxus = { version = "0.6.0-alpha.2" }
+dioxus-web = { version = "0.6.0-alpha.2", features = ["hydrate"] }
+dioxus-fullstack = { version = "0.6.0-alpha.2", features = ["axum"] }
